@@ -4,6 +4,8 @@ import {useDispatch, useSelector} from "react-redux";
 
 import {toggleHambMenu} from "@/store/modules/data";
 
+import Link from "next/link";
+
 const MobileMenu = () => {
     const dispatch = useDispatch()
     const {hamburgerMenuOpen,navItems} = useSelector((state) => state.data)
@@ -23,8 +25,8 @@ const MobileMenu = () => {
             {hamburgerMenuOpen && (
                 <nav className={hamburgerMenuOpen && Styles.menu }>
                     <ul className={Styles.menuItems}>
-                        {navItems.map((i) => (
-                            <li><a href={i.href}>{i.title}</a></li>
+                        {navItems.map((i,idx) => (
+                            <li key={idx}><Link href={i.href}>{i.title}</Link></li>
                         ))}
                     </ul>
                 </nav>

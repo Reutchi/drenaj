@@ -3,6 +3,7 @@ import Styles from './css/navigation.module.scss'
 import {useSelector} from 'react-redux'
 
 import {MobileMenu} from './index'
+import Link from "next/link";
 
 const Navigation = () => {
 
@@ -14,10 +15,10 @@ const Navigation = () => {
                <p>LOGO</p>
            </div>
            <ul className={Styles.navigationItems}>
-               {navItems.map(({id,title,href}) => <li key={id}><a href={href}>{title}</a></li>)}
+               {navItems.map(({id,title,href}) => <li key={title}><Link href={href}>{title}</Link></li>)}
            </ul>
            <div className={Styles.contact}>
-               <a href="/">Связаться сейчас</a>
+               <Link href="/">Связаться сейчас</Link>
            </div>
            <MobileMenu/>
        </nav>
