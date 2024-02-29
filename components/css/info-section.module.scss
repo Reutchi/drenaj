@@ -1,0 +1,41 @@
+@import "styles/vars";
+
+@media only screen and (min-width: 0) {
+  .infoSection{
+    text-align: center;
+    h1{
+      margin: 40px 0 20px 0;
+      font-size: 25px;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+    h1,p{
+      color: $color-white;
+    }
+    .infoSectionDescription{
+      margin-bottom: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .infoSection{
+    text-align: initial;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h1,p{
+      color: $color-white;
+    }
+    h1,p{
+      margin: initial;
+    }
+    .infoSectionDescription{
+      width: 538px;
+      padding: 150px 0;
+      p{
+        padding: 35px 0 61px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import "styles/vars";
+
+@media only screen and (min-width: 0) {
+  .menu{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .menuItems{
+    color: $color-white;
+    display: grid;
+    gap: 20px;
+    place-content: center;
+    height: 100%;
+    li{
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  .hamburger {
+    z-index: 2;
+    right: 40px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: absolute;
+  }
+
+  .hamburgerTop,
+  .hamburgerMiddle,
+  .hamburgerBottom {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background: $color-white;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+
+  .hamburgerMiddle {
+    transform: translateY(7px);
+  }
+
+  .hamburgerBottom {
+    transform: translateY(14px);
+    background: $color-white;
+  }
+
+  .open {
+    transform: rotate(90deg) translateY(0px);
+    position: fixed;
+    top: 50px;
+    right: 25px;
+  }
+
+  .open .hamburgerTop {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+    background: $color-white;
+  }
+
+  .open .hamburgerMiddle {
+    display: none;
+  }
+
+  .open .hamburgerBottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    background: $color-white;
+  }
+
+}
+@media only screen and (min-width: 1200px) {
+  .hamburger{
+    display: none;
+  }
+}
+
