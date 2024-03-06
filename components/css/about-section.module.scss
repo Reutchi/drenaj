@@ -1,0 +1,36 @@
+@import "styles/vars";
+
+@media only screen and (min-width: 0) {
+  .aboutSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .wrapperAboutSection{
+      width: 100%;
+      max-width: 518px;
+    }
+    .aboutSectionSectionName{
+      color: $color-orange;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 79px 0 35px 0;
+      &:after{
+          display: block;
+          padding-top: 22px;
+          width:101px;
+          border-bottom: 1px solid $color-orange;
+          content: '';
+      }
+    }
+    h3{
+      padding-bottom: 35px;
+    }
+    .aboutSectionVideoSection{
+      padding-top: 70px;
+      p{
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+}

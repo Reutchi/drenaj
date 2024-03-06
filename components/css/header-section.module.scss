@@ -1,6 +1,28 @@
-.headerSection{
-  background-image: url("../../public/building.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@media only screen and (min-width: 0px) {
+
+  .headerSection{
+    background: url("../../public/building.jpg") no-repeat center / cover;
+    position: relative;
+
+    .icon{
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+    }
+  }
 }
+
+@media only screen and (min-width: 1200px) {
+  .headerSection{
+    background: url("../../public/building.jpg") no-repeat center / cover;
+    position: relative;
+
+    .icon{
+      position: absolute;
+      left: 55px;
+      bottom: -15px;
+    }
+  }
+}
+
+
