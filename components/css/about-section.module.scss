@@ -3,8 +3,9 @@
 @media only screen and (min-width: 0) {
   .aboutSection{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     .wrapperAboutSection{
       width: 100%;
       max-width: 518px;
@@ -32,5 +33,12 @@
       }
     }
   }
-
+}
+@media only screen and (min-width: 1200px){
+  .aboutSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
