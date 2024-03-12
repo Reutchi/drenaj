@@ -1,44 +1,55 @@
 @import "styles/vars";
 
-@media only screen and (min-width: 0) {
-  .aboutSection{
+.aboutSection {
+  @media only screen and (min-width: 0) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    .wrapperAboutSection{
+
+    .wrapperAboutSection {
       width: 100%;
       max-width: 518px;
     }
-    .aboutSectionSectionName{
+
+    .aboutSectionSectionName {
       color: $color-orange;
       font-size: 16px;
       font-weight: bold;
       padding: 79px 0 35px 0;
-      &:after{
-          display: block;
-          padding-top: 22px;
-          width:101px;
-          border-bottom: 1px solid $color-orange;
-          content: '';
+
+      &:after {
+        display: block;
+        padding-top: 22px;
+        width: 101px;
+        border-bottom: 1px solid $color-orange;
+        content: '';
       }
     }
-    h3{
+    h3 {
       padding-bottom: 35px;
     }
-    .aboutSectionVideoSection{
+    .aboutSectionVideoSection {
       padding-top: 70px;
-      p{
+      p {
         margin-bottom: 16px;
       }
     }
   }
 }
-@media only screen and (min-width: 1200px){
-  .aboutSection{
+
+.aboutSection{
+  @media only screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    .iframeWrapper{
+      iframe{
+        width: 491px;
+        height: 290px;
+      }
+    }
   }
 }

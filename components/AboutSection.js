@@ -15,13 +15,13 @@ const AboutSection = ({
             </div>
             <div className={Styles.aboutSectionVideoSection}>
                 <p>{videoDescription}</p>
-                <iframe
-                    width="491"
-                    height="313"
-                    src="https://www.youtube.com/embed/o-x6Kk28fn8"
-                    frameBorder="0"
-                    allowFullScreen
-                />
+                <div className={Styles.iframeWrapper}>
+                    <iframe
+                        src="https://www.youtube.com/embed/o-x6Kk28fn8"
+                        frameBorder="0"
+                        allowFullScreen
+                    />
+                </div>
             </div>
         </section>
     );
