@@ -30,6 +30,9 @@
     h1,p{
       margin: initial;
     }
+    h1{
+      font-size: calc(1.5em + 1vmin);
+    }
     .infoSectionDescription{
       width: 538px;
       padding: 150px 0;

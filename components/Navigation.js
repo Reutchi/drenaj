@@ -12,7 +12,7 @@ const Navigation = () => {
     return(
        <nav className={Styles.navigation}>
            <div>
-               <p>LOGO</p>
+               <Link className={Styles.logo} href={'/'}>LOGO</Link>
            </div>
            <ul className={Styles.navigationItems}>
                {navItems.map(({id,title,href}) => <li key={title}><Link href={href}>{title}</Link></li>)}

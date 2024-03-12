@@ -1,0 +1,39 @@
+@import '/styles/vars';
+
+.carousel{
+  @media only screen and (min-width: 0) {
+    .slides{
+      width: 286px;
+      margin: 0 auto;
+      display: flex;
+      gap: 7px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 34px;
+      li{
+        cursor: pointer;
+      }
+      li:last-of-type{
+        margin-left: 68px;
+        transform: scaleX(-1);
+      }
+      li:first-of-type{
+        margin-right: 68px;
+
+      }
+      .ellipse{
+        background-color: $color-orange;
+        opacity: 22%;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+      }
+      .ellipse, .selected{
+        background-color: $color-orange;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const AboutSection = () => {
     const {title,description,videoDescription,videoLink} = useSelector((state) => state.data.aboutSection)
     return (
-        <section className={Styles.aboutSection}>
+        <section id="about" className={Styles.aboutSection}>
             <div className={Styles.wrapperAboutSection}>
                 <SectionName sectionName='О нас'/>
                 <h3>{title}</h3>

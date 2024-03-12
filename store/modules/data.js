@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
      navItems: [
-        {id:1,title:'О нас', href: '/'},
+        {id:1,title:'О нас', href: '#about'},
         {id:1,title:'Продукция', href: '/'},
         {id:1,title:'Контакты', href: '/'},
     ],
