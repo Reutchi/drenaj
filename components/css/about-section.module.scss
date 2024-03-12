@@ -12,20 +12,6 @@
       max-width: 518px;
     }
 
-    .aboutSectionSectionName {
-      color: $color-orange;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 79px 0 35px 0;
-
-      &:after {
-        display: block;
-        padding-top: 22px;
-        width: 101px;
-        border-bottom: 1px solid $color-orange;
-        content: '';
-      }
-    }
     h3 {
       padding-bottom: 35px;
     }

@@ -1,0 +1,18 @@
+@import "styles/vars";
+
+.aboutSectionSectionName {
+@media only screen and (min-width: 0) {
+    color: $color-orange;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 79px 0 35px 0;
+
+    &:after {
+      display: block;
+      padding-top: 22px;
+      width: 101px;
+      border-bottom: 1px solid $color-orange;
+      content: '';
+    }
+  }
+}
