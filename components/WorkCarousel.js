@@ -42,7 +42,8 @@ const WorkCarousel = () => {
                          key={id}
                          height={380}
                          src={photo}
-                         style={{objectFit:"cover"}}
+                         priority={true}
+                         style={{ width: "auto", objectFit: "cover" }}
                          alt={alt}
                      />
                  )
@@ -54,7 +55,7 @@ const WorkCarousel = () => {
              {Array(3).fill(0).map((i,idx) => (
                  <li key={idx} onClick={() => handleSelectDot(idx)} className={`${imageCarousel === idx ? Styles.selected : Styles.ellipse}`}></li>
              ))}
-             <li onClick={handleSelectNext}><Image alt={'image'} src={Arrow}/></li>
+             <li onClick={handleSelectNext}><Image style={{width: "auto"}} alt={'image'} src={Arrow}/></li>
          </ul>
      </div>
     )
