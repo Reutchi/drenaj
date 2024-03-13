@@ -2,6 +2,22 @@
 
 .carousel{
   @media only screen and (min-width: 0) {
+    .imageWrapper{
+      display: flex;
+      overflow: hidden;
+      img{
+        cursor: pointer;
+        &:first-child{
+          margin-right: 18px;
+          width: 1200px;
+        }
+        &:nth-last-child(1){
+          position: absolute;
+          width: 140px;
+          right: 0;
+        }
+      }
+    }
     .slides{
       width: 286px;
       margin: 0 auto;
