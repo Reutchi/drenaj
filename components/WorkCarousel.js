@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 
 import Arrow from '../public/orangeArrow.svg'
@@ -35,11 +37,11 @@ const WorkCarousel = () => {
 
     return(
      <div className={Styles.carousel}>
-         <div className={Styles.imageWrapper}>
-             {photosSlide.map(({id,photo,alt}) => {
+         <div className={Styles.imagesWrapper}>
+             {photosSlide.map(({photo,alt}) => {
                  return(
                      <Image
-                         key={id}
+                         key={photo}
                          height={380}
                          src={photo}
                          priority={true}
