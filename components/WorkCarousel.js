@@ -38,19 +38,18 @@ const WorkCarousel = () => {
     return(
      <div className={Styles.carousel}>
          <div className={Styles.imagesWrapper}>
-             {photosSlide.map(({photo,alt}) => {
-                 return(
+             {photosSlide.map(({ id, photo, alt }) => {
+                 return (
                      <Image
-                         key={alt}
+                         key={id}
                          height={380}
                          src={photo}
                          priority={true}
                          style={{ width: "auto", objectFit: "cover" }}
                          alt={alt}
                      />
-                 )
+                 );
              })}
-
          </div>
          <ul className={Styles.slides}>
              <li onClick={handleSelectPrev}><Image alt={'image'} src={Arrow}/></li>
