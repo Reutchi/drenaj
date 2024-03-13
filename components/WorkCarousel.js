@@ -52,7 +52,7 @@ const WorkCarousel = () => {
          <ul className={Styles.slides}>
              <li onClick={handleSelectPrev}><Image alt={'image'} src={Arrow}/></li>
              {Array(3).fill(0).map((i,idx) => (
-                 <li onClick={() => handleSelectDot(idx)} className={`${imageCarousel === idx ? Styles.selected : Styles.ellipse}`}></li>
+                 <li key={idx} onClick={() => handleSelectDot(idx)} className={`${imageCarousel === idx ? Styles.selected : Styles.ellipse}`}></li>
              ))}
              <li onClick={handleSelectNext}><Image alt={'image'} src={Arrow}/></li>
          </ul>
