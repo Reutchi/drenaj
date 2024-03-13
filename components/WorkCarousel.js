@@ -18,7 +18,7 @@ const WorkCarousel = () => {
 
     const photosSlide = [
         {id:1,photo: photoSlide, alt: 'Picture of the author'},
-        {id:2,photo: building, alt: 'Picture of the author'},
+        {id:2,photo: building, alt: 'Picture of the building'},
     ]
 
     const handleSelectPrev = () => {
@@ -41,7 +41,7 @@ const WorkCarousel = () => {
              {photosSlide.map(({photo,alt}) => {
                  return(
                      <Image
-                         key={photo}
+                         key={alt}
                          height={380}
                          src={photo}
                          priority={true}
