@@ -45,7 +45,7 @@ const WorkCarousel = () => {
                          height={380}
                          src={photo}
                          priority={true}
-                         style={{ width: "auto", objectFit: "cover" }}
+                         style={{objectFit: "cover" }}
                          alt={alt}
                      />
                  );
