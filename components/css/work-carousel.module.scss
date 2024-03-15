@@ -4,17 +4,12 @@
   @media only screen and (min-width: 0) {
     .imagesWrapper{
       display: flex;
-      overflow: hidden;
+      justify-content: center;
       img{
         cursor: pointer;
         &:first-child{
           margin-right: 18px;
           width: 1200px;
-        }
-        &:nth-last-child(1){
-          position: absolute;
-          width: 140px;
-          right: 0;
         }
       }
     }

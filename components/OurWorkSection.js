@@ -7,7 +7,7 @@ import WorkCarousel from "@/components/WorkCarousel";
 const OurWorkSection = () => {
     return(
      <section className={Styles.ourWorkSection}>
-         <SectionName sectionName={'НАШИ РАБОТЫ'}/>
+         <SectionName sectionName={'Наши Работы'}/>
          <WorkCarousel/>
      </section>
     )
