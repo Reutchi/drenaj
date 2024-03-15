@@ -18,7 +18,9 @@ const WorkCarousel = () => {
     }
 
     const handleSelectNext = () => {
-        setImageCarousel(prevState => (prevState >= photosSlide.length - 1 ? 0 : prevState + 1))
+        setImageCarousel(
+            prevState => (prevState >= photosSlide.length - 1 ? 0 : prevState + 1
+            ))
     }
 
     const handleSelectDot = (idx) => {
