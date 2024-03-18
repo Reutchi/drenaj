@@ -1,7 +1,7 @@
 import Styles from '../css/base-btn.module.scss'
-const BaseBtn = ({title,className}) => {
+const BaseBtn = ({title,className, style,type}) => {
    return(
-       <button className={`${Styles[className]}`}>
+       <button type={type} style={{color:`${style}`}} className={`${Styles[className]}`}>
            {title}
        </button>
    )

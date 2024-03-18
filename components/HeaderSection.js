@@ -4,8 +4,6 @@ import Polygon from '../public/Polygon.png'
 
 import Image from 'next/image'
 
-
-
 const HeaderSection = ({children}) => {
     return(
         <header className={Styles.headerSection}>

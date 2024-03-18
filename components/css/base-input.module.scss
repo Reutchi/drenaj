@@ -1,0 +1,7 @@
+@import "styles/vars";
+
+.baseInput{
+  @media only screen and (min-width: 0) {
+      display: block;
+  }
+}

@@ -1,0 +1,29 @@
+@import 'styles/vars';
+
+.baseForm{
+  @media only screen and (min-width: 0) {
+    max-width: 419px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    input,textarea{
+      width: 100%;
+      border: 1px solid $color-lightGray;
+      border-radius: 10px;
+      outline: none;
+    }
+    input[type=text]:focus {
+      border: 3px solid #555;
+    }
+    input{
+      height: 40px;
+      padding-left: 24px;
+
+    }
+    textarea{
+      padding-left: 24px;
+      height: 153px;
+    }
+  }
+}
