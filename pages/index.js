@@ -5,6 +5,7 @@ import InfoCard from "@/components/InfoCard";
 import AboutSection from "@/components/AboutSection";
 import OurWorkSection from "@/components/OurWorkSection";
 import OrderSection from "@/components/OrderSection";
+import FooterSection from "@/components/FooterSection";
 export default  function Home(){
     return(
         <main>
@@ -18,6 +19,7 @@ export default  function Home(){
                     <AboutSection/>
                     <OurWorkSection/>
                     <OrderSection/>
+                    <FooterSection/>
                 </Layout>
         </main>
     )
