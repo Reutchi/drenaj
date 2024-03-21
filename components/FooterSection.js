@@ -1,7 +1,9 @@
 import {useSelector} from "react-redux";
 import Link from "next/link";
 
-import { YMaps, Map } from '@pbe/react-yandex-maps';
+import { useWindowSize } from "@uidotdev/usehooks";
+
+import {YMaps, Map, Placemark} from '@pbe/react-yandex-maps';
 
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -9,6 +11,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import Styles from './css/footer-section.module.scss'
 
 const FooterSection = () => {
+    const {width} = useWindowSize()
+
     const data = useSelector((state) => state.data.navItems)
 
     return(
@@ -43,11 +47,13 @@ const FooterSection = () => {
                     </li>
                 </ul>
             </nav>
-            <YMaps>
-                <div>
-                    <Map width={510} height={215} defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
-                </div>
-            </YMaps>
+            <div className={Styles.map}>
+                <YMaps>
+                    <Map  width={width > 1200 ? 512 : 350} defaultState={{ center: [55.751574, 37.573856], zoom: 9 }}>
+                        <Placemark defaultGeometry={[55.751574, 37.573856]} />
+                    </Map>
+                </YMaps>;
+            </div>
         </footer>
     )
 }
