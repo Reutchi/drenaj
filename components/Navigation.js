@@ -18,7 +18,7 @@ const Navigation = () => {
                {navItems.map(({id,title,href}) => <li key={title}><Link href={href}>{title}</Link></li>)}
            </ul>
            <div className={Styles.contact}>
-               <Link href="/">Связаться сейчас</Link>
+               <Link href="/#order">Связаться сейчас</Link>
            </div>
            <MobileMenu/>
        </nav>
